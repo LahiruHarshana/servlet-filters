@@ -17,6 +17,5 @@ public class CORSFilter extends HttpFilter {
         System.out.println("CORS Filterm: incoming request");
         chain.doFilter(req, res);
         System.out.println("CORS Filterm: outgoing response");
-
     }
 }
