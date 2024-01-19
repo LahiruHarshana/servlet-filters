@@ -14,6 +14,7 @@ import java.io.IOException;
 public class CORSFilter extends HttpFilter {
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
-        System.out.println("CORS Filter");
+        System.out.println("CORS Filterm: incoming request");
+        chain.doFilter(req, res);
     }
 }
